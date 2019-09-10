@@ -3,32 +3,32 @@
 		grid-area: header;
 		background-color: red;
 		height: 70px;
-		}
+	}
 
 	.menu{
 		grid-area: menu;
 		background-color: blue;
 		height: 300px;
 	    width: 120px;
-		}
+	}
 
 	.main{
 		grid-area: main;
 		background-color: green ; 
 		width: 1300px;
-		}
+	}
 
 	.menuBar{
 		grid-area: menuBar;
 		background-color: black ; 
 		width: 1400px;
-		}
+	}
 
 	.footer {
 		grid-area: footer;
 		background-color: yellow ; 
 		width: 1300px;
-		}
+	}
 
 	.grid-container {
 		display: grid;
@@ -38,9 +38,7 @@
 			'menu main main'
 			'menu main main'
 			'menu footer footer';
-			grid-gap: 10px
-			padding: 10px;
-		}
+	}
 
 
 	.grid-container > div{
