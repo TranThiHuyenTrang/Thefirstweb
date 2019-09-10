@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.item1{
+		grid-area: header;
+		}
+
+	.item4 {
+		grid-area: menubar;
+		}
+	.item2{
+		grid-area: menu;
+		}
+	.item3{
+		grid-area: main;
+		}
+	
+	.item5 {
+		grid-area: footer;
+		}
+
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+		'header header header '
+		'menubar  menubar  menubar  '
+		'menu main main'
+		'menu main main'
+		'footer footer footer ';
+		grid-gap: 10px
+		padding: 10px;
+	}
+
+
+	.grid-container > div{
+		text-align: center;
+		padding: 20px;
+		font-size: 30px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="grid-container">
+	<div class="item1" style="background-color: red;height: 70px">Header
+	</div>
+
+	<div class="item2" style="background-color: blue;height: 300px; width: 120px">Menu
+	</div>
+
+	<div class="item3" style="background-color: green ; width: 1300px">Main
+	</div>
+
+	<div class="item4" style="background-color: pink ; width: 1400px">menuBar
+	</div>
+
+	<div class="item5" style="background-color: yellow ; width: 1400px">Footer
+	</div>
+
+	</body>
+</html>
